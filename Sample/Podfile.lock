@@ -1,0 +1,79 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Differentiator (4.0.1)
+  - Moya (14.0.0-alpha.1):
+    - Moya/Core (= 14.0.0-alpha.1)
+  - Moya-ObjectMapper-JX (2.8-jx1):
+    - Moya-ObjectMapper-JX/Core (= 2.8-jx1)
+  - Moya-ObjectMapper-JX/Core (2.8-jx1):
+    - Moya (= 14.0.0-alpha.1)
+    - ObjectMapper (~> 3)
+  - Moya-ObjectMapper-JX/RxSwift (2.8-jx1):
+    - Moya-ObjectMapper-JX/Core
+    - Moya/RxSwift
+    - RxSwift (~> 5)
+  - Moya/Core (14.0.0-alpha.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Moya/RxSwift (14.0.0-alpha.1):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - ObjectMapper (3.5.2)
+  - Result (4.1.0)
+  - RxAlertController (5.0.0):
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+
+DEPENDENCIES:
+  - Moya
+  - Moya-ObjectMapper-JX (from `../`)
+  - Moya-ObjectMapper-JX/RxSwift (from `../`)
+  - Moya/RxSwift
+  - ObjectMapper
+  - RxAlertController
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Differentiator
+    - Moya
+    - ObjectMapper
+    - Result
+    - RxAlertController
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  Moya-ObjectMapper-JX:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Moya: 65485239114b3b327a17dc2e839f6c8b7143aae9
+  Moya-ObjectMapper-JX: 7c5720d790e21a03bd266ad46823e1fa01b96753
+  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxAlertController: ef75925a2a002f0f1fd03378ddeceaa9c1c5558f
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+
+PODFILE CHECKSUM: b255f4dcf4c7b4ce427a810e7c270054f56dff32
+
+COCOAPODS: 1.9.1
