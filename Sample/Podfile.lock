@@ -1,44 +1,56 @@
 PODS:
-  - Alamofire (4.9.1)
+  - Alamofire (5.0.0-rc.3)
   - Differentiator (4.0.1)
-  - Moya (14.0.0-alpha.1):
-    - Moya/Core (= 14.0.0-alpha.1)
-  - Moya-ObjectMapper-JX (2.8-jx1):
-    - Moya-ObjectMapper-JX/Core (= 2.8-jx1)
-  - Moya-ObjectMapper-JX/Core (2.8-jx1):
-    - Moya (= 14.0.0-alpha.1)
-    - ObjectMapper (~> 3)
-  - Moya-ObjectMapper-JX/RxSwift (2.8-jx1):
-    - Moya-ObjectMapper-JX/Core
+  - Moya (14.0.0-beta.6):
+    - Moya/Core (= 14.0.0-beta.6)
+  - Moya-ObjectMapper (3.0):
+    - Moya-ObjectMapper/Core (= 3.0)
+  - Moya-ObjectMapper/Core (3.0):
+    - Moya (~> 14.0.0-beta.6)
+    - ObjectMapper
+  - Moya-ObjectMapper/ReactiveSwift (3.0):
+    - Moya-ObjectMapper/Core
+    - Moya/ReactiveSwift
+    - ReactiveSwift
+  - Moya-ObjectMapper/RxSwift (3.0):
+    - Moya-ObjectMapper/Core
     - Moya/RxSwift
-    - RxSwift (~> 5)
-  - Moya/Core (14.0.0-alpha.1):
-    - Alamofire (~> 4.1)
-    - Result (~> 4.1)
-  - Moya/RxSwift (14.0.0-alpha.1):
+    - RxSwift
+  - Moya/Core (14.0.0-beta.6):
+    - Alamofire (= 5.0.0-rc.3)
+  - Moya/ReactiveSwift (14.0.0-beta.6):
+    - Moya/Core
+    - ReactiveSwift (~> 6.0)
+  - Moya/RxSwift (14.0.0-beta.6):
     - Moya/Core
     - RxSwift (~> 5.0)
-  - ObjectMapper (3.5.2)
-  - Result (4.1.0)
+  - ObjectMapper (3.5.1)
+  - ReactiveCocoa (10.2.0):
+    - ReactiveSwift (~> 6.2)
+  - ReactiveSwift (6.2.0)
   - RxAlertController (5.0.0):
     - RxSwift (~> 5.0)
-  - RxCocoa (5.1.1):
+  - RxCocoa (5.0.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
   - RxDataSources (4.0.1):
     - Differentiator (~> 4.0)
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
-  - RxRelay (5.1.1):
+  - RxRelay (5.0.1):
     - RxSwift (~> 5)
-  - RxSwift (5.1.1)
+  - RxSwift (5.0.1)
 
 DEPENDENCIES:
   - Moya
-  - Moya-ObjectMapper-JX (from `../`)
-  - Moya-ObjectMapper-JX/RxSwift (from `../`)
+  - Moya-ObjectMapper (from `../`)
+  - Moya-ObjectMapper/ReactiveSwift (from `../`)
+  - Moya-ObjectMapper/RxSwift (from `../`)
+  - Moya/ReactiveSwift
   - Moya/RxSwift
   - ObjectMapper
+  - ReactiveCocoa
+  - ReactiveSwift
   - RxAlertController
   - RxCocoa
   - RxDataSources
@@ -50,7 +62,8 @@ SPEC REPOS:
     - Differentiator
     - Moya
     - ObjectMapper
-    - Result
+    - ReactiveCocoa
+    - ReactiveSwift
     - RxAlertController
     - RxCocoa
     - RxDataSources
@@ -58,22 +71,23 @@ SPEC REPOS:
     - RxSwift
 
 EXTERNAL SOURCES:
-  Moya-ObjectMapper-JX:
+  Moya-ObjectMapper:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  Moya: 65485239114b3b327a17dc2e839f6c8b7143aae9
-  Moya-ObjectMapper-JX: 7c5720d790e21a03bd266ad46823e1fa01b96753
-  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  Moya: d4821fbcb3e784f34d2f82869e6855057a0b85d1
+  Moya-ObjectMapper: c17b20a2ff331643b04f55c8975883ca0e59824b
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  ReactiveCocoa: a123c42f449c552460a4ee217dd49c76a17c8204
+  ReactiveSwift: 3dc8800378110b13d40b46ab362afa9f6bcffc6c
   RxAlertController: ef75925a2a002f0f1fd03378ddeceaa9c1c5558f
-  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
-  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: b255f4dcf4c7b4ce427a810e7c270054f56dff32
+PODFILE CHECKSUM: a54ee9026cab0878d85c2ed1207e4e7c44ad070e
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.8.4

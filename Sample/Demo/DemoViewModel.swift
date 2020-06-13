@@ -8,7 +8,7 @@
 
 import Foundation
 import Moya
-import Moya_ObjectMapper_JX
+import Moya_ObjectMapper
 
 class DemoViewModel {
   let networking: MoyaProvider<GitHub>
